@@ -13,18 +13,12 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer codigo;
-
     public String nome;
-
     public Integer quantidade;
-
     public Double preco;
-
     public LocalDate validade;
-
     @ManyToOne
     public Categoria categoria;
-
     @ManyToOne
     public Fabricante fabricante;
 }
